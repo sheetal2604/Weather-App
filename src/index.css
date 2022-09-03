@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.Weather {
+  width: 100%;
+  position: relative;
+  color: #fff;
+}
+
+.app {
+
+  background: url("./assets/sunset.jpg");
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  z-index:-1;
+  backdrop-filter: brightness(0.5); 
+
+
+}
+
+.search {
+  text-align: center;
+  padding: 1rem;
+}
+
+input {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  color: #f8f8f8;
+}
+input[type="text"] {
+  transition: width 1.2s cubic-bezier(0, 0.795, 0, 1);
+  width: 50%;
+}
+
+input[type="text"]:focus {
+  width: 100%;
+}
+
+::placeholder{
+  color: #f8f8f8;
+}
+
+.app-container {
+  padding-top: 50px;
+  width: 60%;
+  max-width: 60%;
+}
+
+.app-background {
+  min-height: 100vh;
+  width: 100%;
+  backdrop-filter: brightness(0.5); 
+  display: flex;
+  justify-content: center;
+}
+
+.Weather .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  color:white;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.button{
+  padding: .7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 0.1);
+  color: #f8f8f8;
+}
+.details-page{
+  padding-top: 50px;
+  width: 60%;
+  max-width: 60%;
+}
+
+.graphBar{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.4); 
+}
+
+@media only screen and (max-width: 907px) {
+  .graphBar {
+   width: 100%;
+   margin: 1rem auto;
+   padding: 1rem;
+   border-radius: 12px;
+   background-color: rgba(255, 255, 255, 0.4); 
+   overflow-x: scroll;
+   overflow-y:auto;
+}
+  }
+
+@media only screen and (max-width:700px){
+  .bottom{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  color:white;
+  }
+}
+
+
+
+
