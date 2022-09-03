@@ -20,7 +20,7 @@ const Graph = (props) => {
   };
 
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (props?.location) {
       apiForecast();
     }
