@@ -24,7 +24,7 @@ const Graph = (props) => {
     if (props?.location) {
       apiForecast();
     }
-  }, []);
+  }, [props?.location]);
 
 
 
