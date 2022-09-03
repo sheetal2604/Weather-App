@@ -11,7 +11,6 @@ function App() {
   const [toggle, setToggle] = useState(false);
 
   const handleSearchTerm = (e) => {
-    console.log("e", e);
     setLocation(e);
   };
 

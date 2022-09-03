@@ -11,14 +11,14 @@ const Graph = (props) => {
         return response.json();
       })
       .then((datas) => {
-        console.log("datas", datas);
+      
         setForecast(datas);
       })
       .catch((err) => {
         console.log("There has been an error", err);
       });
   };
-  console.log("location", props.location);
+
 
   useEffect(() => {
     if (props?.location) {
@@ -26,13 +26,11 @@ const Graph = (props) => {
     }
   }, []);
 
-  console.log("forecast", forecast);
+
 
   const temperature = forecast.list?.map((item) => item.main.temp);
-  console.log(temperature);
-
   const time = forecast.list?.map((item) => item.dt_txt);
-  console.log(time);
+  
 
   const graphBar = {
     options: {
